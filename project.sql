@@ -2,11 +2,9 @@ create database `tracking_for_mentor`;
 use tracking_for_mentor;
 SHOW TABLES;
 
-drop database tracking_for_mentor;
-
 create table `teachers`(
 id int not null auto_increment,
-full_name varchar(500) ,
+full_name varchar(50) ,
 age int,
 phone varchar(30),
 education varchar(500),
@@ -15,7 +13,7 @@ primary key(id)
 
 create table `students`(
 id int not null auto_increment,
-full_name varchar(500) ,
+full_name varchar(50) ,
 age int,
 phone varchar(30),
 primary key(id)
@@ -23,7 +21,7 @@ primary key(id)
 
 create table `subjects`(
 id int not null auto_increment,
-title varchar(500),
+title varchar(50),
 parent_id int,
 primary key(id),
 constraint foreign key(parent_id) references subjects(id)
