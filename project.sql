@@ -7,7 +7,7 @@ id int not null auto_increment,
 full_name varchar(50) ,
 age int,
 phone varchar(30),
-education varchar(500),
+education varchar(100),
 primary key(id)
 );
 
